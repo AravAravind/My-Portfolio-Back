@@ -4,7 +4,12 @@ const nodemailer = require("nodemailer");
 const cors = require("cors");
 
 // Load environment variables
-dotenv.config({ path: "../Backend/.env" });
+//dotenv.config({ path: "../Backend/.env" });
+
+
+// Ensure .env loads early
+dotenv.config();
+
 
 const app = express();
 const PORT = 5000;
